@@ -8,6 +8,7 @@ public class Buttonpress : MonoBehaviour
     public Text ScoreText;
     public GameObject Button;
     public int score = 0;
+    
 
 
     void OnMouseDown()
@@ -17,6 +18,9 @@ public class Buttonpress : MonoBehaviour
 
         score++;
         ScoreText.text = "Points: " + score;
+
+        
     }
 
+    
 }
