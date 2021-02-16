@@ -11,17 +11,14 @@ public class TimerScript : MonoBehaviour
     public float Timer = 10;
     public Text TimerText;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+
+
         TimerText.text = (Timer).ToString("0");
+
+
         if (Timer > 0)
         {
             Timer -= Time.deltaTime;
@@ -29,7 +26,9 @@ public class TimerScript : MonoBehaviour
         else
         {
             SceneManager.LoadScene("GameOver");
+            
             Debug.Log("End of timer");
+
         }
     }
 }
